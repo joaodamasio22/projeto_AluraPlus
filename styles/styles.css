@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-de-fundo: #000000;
+    --branco-principal: #ffffff;
+    --botao-azul: #167bf7;
+    --botao-azul-efeito: #3c92fa;
+    --cinza-segundario: #c0c0c0;
+    --fonte-principal: "inter", serif;
+    --fonte-size-principal: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: var(--fonte-size-principal);
+    font-weight: 400;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url("/imagem/background.png");    
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.botao__segundario{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+}
+
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-segundario);
+    margin-top: 1em;
+}
+
+.segundario{
+    display: flex;
+    align-items: center;
+}
+
+.imagem__plataforma{
+    margin-left: 90px;
+}
+
+.texto__plataforma{
+    margin-top: 4em;
+}
+
+.texto__plataforma > h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    margin-bottom: 0.1em;
+    margin-top: 2.2em;
+}
+
+.texto__plataforma > p{
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    color: var(--cinza-segundario);
+}
+
+.terciario{
+    align-items: center;
+}
+
+.texto__terciario{
+    font-size: 20px;
+    color: var(--cinza-segundario);
+    margin-left: 2.3em;
+    margin-right: 3.5em
+}
+
+.botao__assinar{
+    padding: 20px;
+    margin-top: 30px;
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.botao__assinar:hover{
+    background-color: var(--botao-azul-efeito);
+}
+
+.imagem__telas{
+    margin-left: 10em
+}
+
+.quarto{
+    align-items: center;
+}
+
+.texto_quarto > h2{
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+}
+
+.texto_quarto > p{
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--cinza-segundario);
+}
+
+.titulo__dispositivos{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 80px;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.titulo__dispositivos{
+  font-size: 48px;
+  color: var(--branco-principal);
+  text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos__lista h3{
+    font-size: 32px;
+    color: var(--branco-principal);
+   
+}
+
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.lista__link{
+    display: flex;
+    justify-content: center;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.idioma{
+    margin-left: 300px;
+}
+
+.informacao__rodape{
+    margin-top: 20px;
+    color: var(--cinza-segundario);
+    font-size: 14px;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+}
+
+.botao__segundario:hover{
+    background-color: var(--botao-azul-efeito)
+}
